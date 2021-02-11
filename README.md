@@ -20,8 +20,8 @@ Features:
 
 ## Contributing
 
-* Lol no.
+* Lol no!
 
 ## License
 
-* Lol no.
+* Lol no!
