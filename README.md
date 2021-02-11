@@ -16,7 +16,7 @@ Features:
 
 ## Usage
 
-*press the red "Generate Password" button, and follow the instruction prompts.
+* press the red "Generate Password" button, and follow the instruction prompts.
 
 ## Contributing
 
