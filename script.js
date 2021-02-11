@@ -1,7 +1,6 @@
 //Global variables
 var generateBtn = document.querySelector("#generate");
 
-
 function writePassword() {
   var password = generatePassword();
   var passwordFinal = document.querySelector("#password");
