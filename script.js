@@ -50,12 +50,15 @@ function generatePassword() {
   for (var i = 0; i < passText.length; i++) {
     semiFinalText += passText.charAt(Math.floor(Math.random() * passText.length));
   }
+
   console.log(semiFinalText);
   console.log(passLength);
-  var finalText = semiFinalText.slice(passText.length - passLength.length);
+
+  var finalText = semiFinalText.slice(passText.length - passLength);
 
   console.log(passText);
   console.log(finalText);
+
   return finalText;
 }
 
