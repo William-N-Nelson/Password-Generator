@@ -1,6 +1,7 @@
-//Global variables
+//Global variable
 var generateBtn = document.querySelector("#generate");
 
+//Initial function, cycles through all the code to push the password to the end user.
 function writePassword() {
   var password = generatePassword();
   var passwordFinal = document.querySelector("#password");
@@ -23,7 +24,6 @@ function generatePassword() {
   
   var random = new Random();
   var passLength = random.lengthCheck();
-  console.log(passLength);
 
   passText = "";
 
@@ -51,8 +51,8 @@ function generatePassword() {
     semiFinalText += passText.charAt(Math.floor(Math.random() * passText.length));
   }
 
-  console.log(semiFinalText);
   console.log(passLength);
+  console.log(semiFinalText);
 
   var finalText = semiFinalText.slice(passText.length - passLength);
 
@@ -62,7 +62,7 @@ function generatePassword() {
   return finalText;
 }
 
-// 4 generateX functions for randomization of the password
+// 4 generateX functions for randomization of the password; Contained within a void function for better organization/passLength distribution.
 function Random() {
   //Length of the password, made "idiot-proof"
   var passLength = prompt("Type your password length here in whole numerals only.\n Min Character Length = 8 Max Character Length = 128.");
